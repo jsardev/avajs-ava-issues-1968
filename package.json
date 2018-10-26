@@ -1,0 +1,31 @@
+{
+    "name": "ava-babel-issue",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "test": "ava"
+    },
+    "dependencies": {
+        "react": "16.6.0",
+        "react-dom": "16.6.0"
+    },
+    "devDependencies": {
+        "@babel/core": "7.0.0",
+        "@babel/preset-react": "7.0.0",
+        "@babel/register": "7.0.0",
+        "ava": "1.0.0-rc.1"
+    },
+    "ava": {
+        "require": [
+            "@babel/register"
+        ],
+        "babel": {
+            "testOptions": {
+                "presets": [
+                    "@babel/preset-react"
+                ]
+            }
+        }
+    }
+}
